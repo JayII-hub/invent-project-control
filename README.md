@@ -1,14 +1,27 @@
 # Invent Project Control App
 
-Next.js + Supabase + Vercel project management app.
+This is a Next.js + Supabase starter app for Invent India style stage-gate and sprint project control.
+
+## What it includes
+- Project Master: Project ID, Project Name, Client, PM
+- Activity Planner
+- Resource assignment
+- Daily updates and actual hours
+- Live Kanban by status
+- 40-hour resource allocation dashboard
+- Simple Gantt style timeline
+- Gate Reviews
+- Change Requests
 
 ## Setup
-1. Copy `.env.example` to `.env.local`.
-2. Fill Supabase URL and anon key from Supabase > Project Settings > API.
-3. Run `npm install`.
-4. Run `npm run dev`.
-5. Deploy to Vercel and add same environment variables.
+1. Create Supabase project and tables.
+2. Copy `.env.local.example` to `.env.local`.
+3. Add Supabase URL and anon key.
+4. Run `npm install`.
+5. Run `npm run dev`.
+6. Deploy to Vercel and add same environment variables.
 
-## Supabase prerequisites
-Tables required: clients, resources, projects, activities, daily_updates, reviews, change_requests, attachments.
-Bucket required: project-attachments.
+## Supabase keys location
+Supabase Dashboard → Project Settings → API:
+- Project URL
+- anon public key
